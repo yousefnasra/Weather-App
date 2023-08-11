@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+        <!-- icon -->
+        <link rel="shortcut icon" href="imgs/logo@2x.png" type="image/x-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <main class="site-conten mb-5 pb-5">
+        <!-- Nav -->
+        <nav class="navbar navbar-expand-lg py-5" id="#navbar">
+            <div class="container px-md-4">
+                <a class="navbar-brand d-flex gap-3 text-white" href="#">
+                    <img src="imgs/logo@2x.png" alt="logo" width="64" height="38">
+                    <div class="nav-logo">
+                        <h1>Weather</h1>
+                        <small>tagline goes here</small>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler rounded-pill p-3 mb-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars"></i></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active rounded-pill" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-pill" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-pill" href="#">Live cameras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-pill" href="#">Photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-pill" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--  -->
+
+        <!-- Header -->
+        <header style="background-image: url(imgs/banner.png);">
+            <div class="container px-md-4">
+                <div class="position-relative">
+                    <input id="findLocation" type="text"
+                        class="w-100 rounded-pill main-bg border-0 py-3 px-4 position-absolute text-white find-location"
+                        placeholder="Find your location...">
+                    <button class=" find rounded-pill px-5 py-2 border-0  position-absolute end-0 mt-2 me-2 text-white"
+                        type="button">Find</button>
+                </div>
+            </div>
+        </header>
+        <!--  -->
+
+        <!-- body -->
+        <div class="forecast-table" id="forecastTable">
+            <div class="container">
+                <div class="forecast-container row" id="forecast">
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-5 mt-5">
+        <div class="container px-md-4">
+            <div class="footer-content row mb-2">
+                <div class="col-lg-8 mb-4" style="min-height: 60px;">
+                    <div class="position-relative">
+                        <form>
+                            <input id="findLocation" type="text"
+                                class="w-100 rounded-pill main-bg border-0 py-3 px-4 position-absolute text-white find-location"
+                                placeholder="Enter your email to subscribe...">
+                            <button
+                                class=" find rounded-pill px-3 py-2 fs-6 border-0  position-absolute end-0 mt-2 me-2 text-white"
+                                type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 social d-flex flex-wrap">
+                    <a href="" class="d-flex justify-content-center align-items-center">
+                        <i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="" class="d-flex justify-content-center align-items-center"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="" class="d-flex justify-content-center align-items-center"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="" class="d-flex justify-content-center align-items-center"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+            <p class="ps-2">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

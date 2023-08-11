@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <!-- icon -->
+    <link rel="shortcut icon" href="imgs/logo@2x.png" type="image/x-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <main class="site-conten mb-5 pb-5">
+        <!-- Nav -->
+        <nav class="navbar navbar-expand-lg py-5" id="#navbar">
+            <div class="container px-md-4">
+                <a class="navbar-brand d-flex gap-3 text-white" href="#">
+                    <img src="imgs/logo@2x.png" alt="logo" width="64" height="38">
+                    <div class="nav-logo">
+                        <h1>Weather</h1>
+                        <small>tagline goes here</small>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler rounded-pill p-3 mb-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars"></i></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active rounded-pill" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-pill" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-pill" href="#">Live cameras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-pill" href="#">Photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-pill" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- contact-header -->
+        <div class="contact-header w-100 mb-5">
+            <div class="container">
+                <div class="fullwidth p-4 rounded-pill">
+                    <a href="index.html" class="me-3">Home <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                    <span class="text-white">
+                        Contact
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- contact-body -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="fullwidth p-3 p-md-4 rounded-3">
+                            <div class="map mb-4">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d24196.240156934793!2d-74.0125228!3d40.7063473!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x89c25a11346d7b77%3A0x79f3a4da17bfeba1!2sXChangeSpaces%20event%2C%20conference%20and%20training%20space%20rentals%2050%20Broadway%20New%20York%2C%20NY%2010004!3m2!1d40.7063473!2d-74.0125228!5e0!3m2!1sen!2seg!4v1686762618620!5m2!1sen!2seg"
+                                    style="border:0; width: 100%;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            <div class="map-details">
+                                <address class="d-flex">
+                                    <i class="fa-solid fa-location-dot me-3 main-color"></i>
+                                    <p> Company Name INC. <br>
+                                        2803 Avenue Street, Los Angeles</p>
+                                </address>
+                                <a href="#" class="me-3 text-decoration-none">
+                                    <i class="fa-solid fa-phone me-2 main-color"></i>
+                                    +1 800 314 235
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-solid fa-envelope me-2 main-color"></i>
+                                    contact@companyname.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1">
+                        <h2 class="text-white">Contact us</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur inventore
+                            ducimus, facilis, numquam id soluta omnis eius recusandae nesciunt vero repellat harum cum.
+                            Nisi facilis odit hic, ipsum sed!</p>
+                        <form>
+                            <div class="row">
+                                <div class="col-lg-6 px-1">
+                                    <input  class="form-control rounded-pill mb-2 p-4 py-3" type="text" placeholder="Your name...">
+                                </div>
+                                <div class="col-lg-6 px-1">
+                                    <input  class="form-control rounded-pill mb-2 p-4 py-3" type="text" placeholder="Email Address...">
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="col-lg-6 px-1">
+                                    <input  class="form-control rounded-pill mb-2 p-4 py-3" type="text" placeholder="Company name...">
+                                </div>
+                                <div class="col-lg-6 px-1">
+                                    <input  class="form-control rounded-pill mb-2 p-4 py-3" type="text" placeholder="Website...">
+                                </div>
+                            </div>
+                            <textarea  class="form-control rounded-5 mb-2 p-4 py-3"  id="exampleFormControlTextarea1" rows="5" placeholder="Message"></textarea>
+                            <div class="text-end">
+                                <input  class="btn rounded-pill text-white px-3" type="submit" placeholder="Send message">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="py-5 mt-5" id="a">
+        <div class="container px-md-4">
+            <div class="footer-content row mb-2">
+                <div class="col-lg-8 mb-4" style="min-height: 60px;">
+                    <div class="position-relative">
+                        <form>
+                            <input id="findLocation" type="text"
+                                class="w-100 rounded-pill main-bg border-0 py-3 px-4 position-absolute text-white find-location"
+                                placeholder="Enter your email to subscribe...">
+                            <button
+                                class=" find rounded-pill px-3 py-2 fs-6 border-0  position-absolute end-0 mt-2 me-2 text-white"
+                                type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 social d-flex flex-wrap">
+                    <a href="" class="d-flex justify-content-center align-items-center">
+                        <i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="" class="d-flex justify-content-center align-items-center"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a href="" class="d-flex justify-content-center align-items-center"><i
+                            class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="" class="d-flex justify-content-center align-items-center"><i
+                            class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+            <p class="ps-2">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
